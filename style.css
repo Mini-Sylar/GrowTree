@@ -1,9 +1,14 @@
 body {
   background: url("./images/bg-1.png") no-repeat center center;
-  margin: 0;
+  margin: 0 auto;
   height: 100vh;
   width: 100vw;
- overflow: hidden;
+ /* overflow: hidden; */
+}
+
+html{
+  overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -34,7 +39,7 @@ a{
   bottom: 100px;
   background-color: #6f9e23bd;
   height: 100vh;
-  width: 110vw;
+  width: 100vw;
   overflow: hidden;
   /* padding-bottom: 100vh; */
   z-index: 9;
@@ -196,6 +201,7 @@ i{
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+
 }
 
 .circles li {
