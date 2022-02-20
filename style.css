@@ -37,7 +37,7 @@ a {
   bottom: 100px;
   background-color: #6f9e23bd;
   width: 100vw;
-  padding-left: 1px;
+  padding-left: 10px;
   z-index: 9;
   backdrop-filter: blur(10px);
   font-size: larger;
