@@ -3,12 +3,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
- /* overflow: hidden; */
-}
-
-html{
-  overflow-y: hidden;
-    overflow-x: hidden;
+ overflow: hidden;
 }
 
 
@@ -16,7 +11,7 @@ a{
   text-decoration: none;
 }
 .container {
-  margin: 1rem 1rem;
+  margin: 0 auto;
 }
 
 .navigation-desktop {
@@ -72,10 +67,11 @@ a{
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  font-size: 95px;
+  font-size: 87px;
   position: relative;
   right: 1.2rem;
   margin-top: 1em;
+  width: 100%;
 }
 .catch {
   z-index: -9;
@@ -121,6 +117,7 @@ a{
 
 .sub-catch {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 2em;
   letter-spacing: 0;
 }
@@ -148,7 +145,6 @@ a{
   position: relative;
   margin-top: 3em;
   display: flex;
-
   justify-content: center;
 }
 
@@ -194,7 +190,7 @@ i{
 /*  */
 /* Animated Circles CSS */
 
-.circles {
+/* .circles {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -333,7 +329,7 @@ i{
 	border-radius: 50%;
 	background: #27702e3b;
   
-}
+} */
 
 @keyframes animate {
 	0% {
