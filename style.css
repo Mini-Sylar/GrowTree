@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 a {
@@ -22,6 +22,8 @@ a {
 .mobile {
   display: flex;
   justify-content: space-around;
+   overflow: hidden;
+   padding-top: 0.5em;
 }
 
 .mobile-options {
@@ -43,6 +45,7 @@ a {
   font-size: larger;
   height: 0;
   transition: height 0.3s linear;
+   overflow: hidden;
 }
 
 .mobile-options-show {
