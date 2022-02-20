@@ -1,9 +1,6 @@
-let play = document.querySelector(".play-button");
-
-let video = document.querySelector("#video-style");
-
+const play = document.querySelector(".play-button");
+const video = document.querySelector("#video-style");
 const hamburger = document.querySelector(".hamburger-mobile");
-
 const mobile_menu  = document.querySelector('.mobile-options')
 
 play.addEventListener("click", function () {
@@ -18,7 +15,6 @@ play.addEventListener("click", function () {
 
 
 hamburger.addEventListener('click',function(){
-    console.log("clicked");
     mobile_menu.classList.toggle("mobile-options-show");
 })
 
