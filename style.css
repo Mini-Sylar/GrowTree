@@ -12,6 +12,7 @@ a{
 }
 .container {
   margin: 0 auto;
+  position: absolute;
 }
 
 .navigation-desktop {
