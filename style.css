@@ -3,7 +3,7 @@ body {
   margin: 0 ;
   height: 100vh;
   width: 100vw;
-
+overflow: hidden;
 }
 
 
@@ -194,7 +194,7 @@ i{
 /*  */
 /* Animated Circles CSS */
 
-/* .circles {
+.circles {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -212,7 +212,7 @@ i{
 	height: 20px;
 	background: #94de1d8c;
 	animation: animate 25s linear infinite;
-	bottom: calc(-150px - 40vh);
+	bottom: calc(-150px );
 }
 
 .circles li:nth-child(1) {
@@ -333,7 +333,7 @@ i{
 	border-radius: 50%;
 	background: #27702e3b;
   
-} */
+}
 
 @keyframes animate {
 	0% {
