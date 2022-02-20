@@ -197,6 +197,8 @@ i {
   width: 90.5%;
   height: 100vh;
   z-index: -1;
+  /* background-color:darkblue; */
+  overflow: hidden;
 }
 
 .circles li {
