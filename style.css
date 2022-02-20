@@ -61,18 +61,20 @@ a{
 }
 
 
-/* .main-catch {
+.main-catch {
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  font-size: 87px;
+  font-size: 90px;
   position: relative;
   right: 1.2rem;
   margin-top: 1em;
   width: 100%;
-} */
+  margin-bottom: 0;
+  overflow: hidden;
+}
 .catch {
   z-index: -9;
 }
