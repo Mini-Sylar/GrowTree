@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowTree</title>
+    <script
+      src="https://kit.fontawesome.com/df3ec59988.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        font-family: "Montserrat";
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="mobile-options">
+    <a href="#" class="main">Main</a>
+          <a href="#" class="info">Info</a>
+          <a href="#" class="contact">Contact</a>
+  </div>
+    <div class="container">
+      <nav class="navigation-desktop">
+        <div class="logo"><img src="./images/logo.png" alt="" /></div>
+        <div class="options">
+          <a href="#" class="main">Main</a>
+          <a href="#" class="info">Info</a>
+          <a href="#" class="contact">Contact</a>
+          <button type="button" class="plant-now">Plant Now</button>
+          <button type="button" class="hamburger">
+            <img src="./images/menu icon.png" alt="" width="70%" />
+          </button>
+        </div>
+      </nav>
+      <nav class="mobile">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" width="70%" />
+        </div>
+        <button type="button" class="hamburger-mobile">
+          <img src="./images/menu icon.png" alt="" width="70%" />
+        </button>
+      </nav>
+
+      <section class="Grow-logo">
+        <div class="main-catch">
+          <h1 class="catch">
+            <span class="g">G</span><span class="r">R</span
+            ><span class="o">O</span><span class="w">W</span>
+          </h1>
+        </div>
+      </section>
+      <section class="text-body">
+        <div class="section2">
+          <p class="sub-catch">
+            As an environmental charity, we’re on a <br />
+            mission to make it simple for everyone to <br />
+            help the environment by planting each one<br />
+            tree!
+          </p>
+          <button type="button" class="plant-button">Plant A Tree Now</button>
+        </div>
+      </section>
+
+      <section class="videoplayer">
+        <div class="video-container">
+          <!-- Button -->
+          <button type="button" class="play-button">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <!-- End Button -->
+          <!-- Video -->
+          <video width="320" height="180" loop autoplay id="video-style">
+            <source src="./videos/footage-1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="app.js">
+  </script>
+    <ul class='circles'>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+  <script>
+    
+	jQuery(document).ready(function () {
+		jQuery(".container").append(
+			"<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
+		);
+	}); 
+</script>
+</html>
