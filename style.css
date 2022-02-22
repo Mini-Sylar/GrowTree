@@ -224,7 +224,7 @@ a {
 }
 
 .play-button:hover {
-  filter: drop-shadow(0 0 0.75rem #94de1d);
+  filter: drop-shadow(0 0 0.75rem #e6e7e5);
 }
 
 i {
