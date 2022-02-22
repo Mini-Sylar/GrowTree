@@ -1,4 +1,4 @@
-.main-body {
+body {
   background: url("./images/bg-1.png") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
@@ -10,12 +10,12 @@
 
 
 
-.main-body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.main-body {
+body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
