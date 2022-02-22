@@ -4,8 +4,8 @@
   height: 100vh;
   width: 100vw;
   background-size: 100% cover;
-  background-color: transparent;
   transition: background-image 2s ease;
+  
 }
 
 .main-body::-webkit-scrollbar {
@@ -268,7 +268,7 @@ i {
   width: 90.5%;
   height: 100vh;
   z-index: -1;
-  /* background-color:darkblue; */
+  padding-top: 1em;
   overflow: hidden;
 }
 
@@ -280,7 +280,7 @@ i {
   height: 20px;
   background: #94de1d8c;
   animation: animate 25s linear infinite;
-  bottom: calc(-150px);
+  bottom: calc(-150px - 5vh);
 }
 
 .circles li:nth-child(1) {
