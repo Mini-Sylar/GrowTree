@@ -1,21 +1,19 @@
-body {
+.main-body {
   background: url("./images/bg-1.png") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-
-  background-color:transparent;
-  transition:background-image  2s ease;
+  background-size: cover;
+  background-color: transparent;
+  transition: background-image 2s ease;
 }
 
-
-
-body::-webkit-scrollbar {
+.main-body::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+.main-body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -29,15 +27,15 @@ a {
   /* background-color: darkblue; */
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
-   background: url("./images/logo.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   width: 80%;
-   height: 40px;
-  transition:background-image  2s ease;
+  background: url("./images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 40px;
+  transition: background-image 2s ease;
 }
 
 .navigation-desktop {
@@ -51,8 +49,6 @@ a {
   /* padding-top: 0.5em; */
   /* background-color: powderblue; */
 }
-
-
 
 .mobile-options {
   display: flex;
@@ -411,38 +407,36 @@ i {
   background: #27702e3b;
 }
 
-
 /* Purple Palette */
 .purple-me {
   background-color: #de1dc4;
   transition: background-color 1s ease;
 }
 
-.purple-me-back{
+.purple-me-back {
   background-color: #9e235cbd;
 }
 
-.purple-me-image{
+.purple-me-image {
   background: url("./images/bg-2.png") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  background-color:transparent;
-  transition: background-image 2s ease;
-  
+  background-size: cover;
+  background-color: transparent;
+  transition: all 2s ease;
 }
 
-.purple-me-logo{
- display: flex;
+.purple-me-logo {
+  display: flex;
   align-items: center;
-   background: url("./images/logo-purple.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   width: 80%;
-   height: 40px;
-    transition:background-image  2s ease;
+  background: url("./images/logo-purple.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 40px;
+  transition: background-image 2s ease;
 }
-
 
 /* Yellow Palette */
 .yellow-me {
@@ -450,35 +444,30 @@ i {
   transition: background-color 1s ease;
 }
 
-.yellow-me-back{
+.yellow-me-back {
   background-color: #9c9e23bd;
 }
 
-.yellow-me-image{
+.yellow-me-image {
   background: url("./images/bg-3.png") no-repeat center center;
+  background-size: cover;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  background-color:transparent;
-  transition: background-image 2s ease;
-  
+  background-color: transparent;
+  transition: all 2s ease;
 }
 
-.yellow-me-logo{
- display: flex;
+.yellow-me-logo {
+  display: flex;
   align-items: center;
-   background: url("./images/logo-yellow.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   width: 80%;
-   height: 40px;
-    transition:background-image  2s ease;
+  background: url("./images/logo-yellow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 40px;
+  transition: background-image 2s ease;
 }
-
-
-
-
-
 
 @keyframes animate {
   0% {
