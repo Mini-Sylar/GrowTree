@@ -32,8 +32,6 @@ const logo = document.querySelectorAll(".logo")[1];
 const plant = document.querySelector(".plant-button");
 const mainbody = document.querySelector(".main-body");
 
-
-
 play.addEventListener("click", function () {
   if (video.paused) {
     video.play();
@@ -47,8 +45,6 @@ play.addEventListener("click", function () {
 hamburger.addEventListener("click", function () {
   mobile_menu.classList.toggle("mobile-options-show");
 });
-
-
 
 plant.addEventListener("click", function () {
   // Plant Button
@@ -72,4 +68,9 @@ plant.addEventListener("click", function () {
     body_mobile[
       ($.inArray(mainbody.className, body_mobile) + 1) % body_mobile.length
     ];
+  // Disable Button Till After Transition
+  plant.disabled = true;
+  setTimeout(function () {
+    plant.disabled = false;
+  }, 2000);
 });
