@@ -26,7 +26,7 @@ a {
   /* background-color: darkblue; */
 }
 
-.logo {
+.logo,.logo-desktop {
   display: flex;
   align-items: center;
   background: url("./images/logo.png");
@@ -142,7 +142,6 @@ a {
   z-index: -3;
 }
 
-
 .section2 {
   /* background-color: darkblue; */
   display: flex;
@@ -190,7 +189,7 @@ a {
   border-top-right-radius: 0;
 }
 
-.fa-play{
+.fa-play {
   transition: all 0.2s ease;
 }
 
@@ -412,6 +411,106 @@ i {
   background: #27702e3b;
 }
 
+@media only screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: flex;
+    padding-top: 1em;
+    /* background-color: darkblue; */
+  }
+  .options {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3em;
+  }
+  .options > a {
+    color: #ecf5e1;
+    text-align: center;
+    position: relative;
+  }
+
+  .options > a::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 3px solid #92dd28;
+    top: 20%;
+    width: 10px;
+    margin-left: 10px;
+    opacity: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .options > a::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 3px solid #92dd28;
+    top: 20%;
+    width: 10px;
+    right: 90%;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .options > a:hover::before {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .options > a:hover::after {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .plant-now {
+    background: transparent;
+    height: 2.5rem;
+    width: 150px;
+    border: 2px solid #94de1d;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    cursor: pointer;
+  }
+
+  .main-catch {
+    font-size: 120px;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+  }
+  .hamburger > * {
+    filter: brightness(200%);
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    filter: drop-shadow(0 0 0.75rem #ffffff);
+    transform: scale(1.05) rotate(-1deg);
+  }
+}
+
+.purple-me-plant-now {
+  border-color: #de1dc4;
+  transition: border-color 2s ease;
+}
+
+.yellow-me-plant-now {
+  border-color: #dec11d;
+  transition: border-color 2s ease;
+}
+
 /* Purple Palette */
 .purple-me {
   background-color: #de1dc4;
@@ -443,8 +542,8 @@ i {
   transition: background-image 2s ease;
 }
 
-.purple-me-plant-now{
-  border-color:#de1dc4 ;
+.purple-me-plant-now {
+  border-color: #de1dc4;
 }
 
 /* Yellow Palette */
@@ -456,11 +555,9 @@ i {
 .yellow-me-back {
   background-color: #9c9e23bd;
 }
-.yellow-me-plant-now{
-  border-color:#dec11d ;
+.yellow-me-plant-now {
+  border-color: #dec11d;
 }
-
-
 
 .yellow-me-image {
   background: url("./images/bg-3.jpg") no-repeat center center;
@@ -482,111 +579,6 @@ i {
   height: 40px;
   transition: background-image 2s ease;
 }
-
-
-
-@media only screen and (min-width: 1024px) {
-  .mobile {
-    display: none;
-  }
-
-  .navigation-desktop {
-    display: flex;
-    padding-top: 1em;
-    /* background-color: darkblue; */
-  }
-  .options {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3em;
-  }
-  .options > a {
-    color: #ecf5e1;
-    text-align: center;
-    position: relative;
-  }
-
-  .options > a::after{
-     content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 3px solid #92dd28;
-    top: 20%;
-    width: 10px;
-     margin-left: 10px;
-      opacity: 1;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  } 
-  
-  .options > a::before {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 3px solid #92dd28;
-    top: 20%;
-    width: 10px;
-     right: 90%;
-    margin-right: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  .options > a:hover::before {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
-  .options > a:hover::after {
-      opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
-  .plant-now {
-    background: transparent;
-    height: 2.5rem;
-    width: 150px;
-    border: 2px solid #94de1d;
-    border-radius: 20px;
-    border-top-right-radius: 0;
-    cursor: pointer;
-  }
-
-  .main-catch{
-    font-size: 120px;
-  }
-
-
-  .hamburger {
-  background-color: transparent;
-  border: none;
-  z-index: 10;
-}
-.hamburger > * {
-  filter: brightness(200%);
-}
-
-.hamburger:hover {
-  cursor: pointer;
-  transition: all 0.3s ease-in;
-  filter: drop-shadow(0 0 0.75rem #ffffff);
-  transform: scale(1.05) rotate(-1deg);
-}
-}
-
-
-.purple-me-plant-now{
-  border-color:#de1dc4 ;
-  transition: border-color 2s ease;
-}
-
-.yellow-me-plant-now{
-  border-color:#dec11d ;
-   transition: border-color 2s ease;
-}
-
 
 @keyframes animate {
   0% {

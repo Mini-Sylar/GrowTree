@@ -34,7 +34,8 @@ const play = document.querySelector(".play-button");
 const video = document.querySelector("#video-style");
 const hamburger = document.querySelector(".hamburger-mobile");
 const mobile_menu = document.querySelector(".mobile-options");
-const logo = document.querySelectorAll(".logo")[1];
+const logo = document.querySelector(".logo");
+const logo_desktop = document.querySelector(".logo-desktop")
 const plant = document.querySelector(".plant-button");
 const mainbody = document.querySelector(".main-body");
 const plantNow = document.querySelector(".plant-now");
@@ -70,6 +71,12 @@ plant.addEventListener("click", function () {
     logo_colors[
       ($.inArray(logo.className, logo_colors) + 1) % logo_colors.length
     ];
+// Logo Desktop
+  logo_desktop.className =
+    logo_colors[
+      ($.inArray(logo_desktop.className, logo_colors) + 1) % logo_colors.length
+    ];
+
   // Body
   mainbody.className =
     body_mobile[
