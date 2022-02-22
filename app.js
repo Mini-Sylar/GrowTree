@@ -24,6 +24,12 @@ const body_mobile = [
   "main-body",
 ];
 
+const plant_now = [
+  "plant-now purple-me-plant-now",
+  "plant-now yellow-me-plant-now",
+  "plant-now",
+];
+
 const play = document.querySelector(".play-button");
 const video = document.querySelector("#video-style");
 const hamburger = document.querySelector(".hamburger-mobile");
@@ -31,6 +37,7 @@ const mobile_menu = document.querySelector(".mobile-options");
 const logo = document.querySelectorAll(".logo")[1];
 const plant = document.querySelector(".plant-button");
 const mainbody = document.querySelector(".main-body");
+const plantNow = document.querySelector(".plant-now");
 
 play.addEventListener("click", function () {
   if (video.paused) {
@@ -68,6 +75,13 @@ plant.addEventListener("click", function () {
     body_mobile[
       ($.inArray(mainbody.className, body_mobile) + 1) % body_mobile.length
     ];
+
+  // Plant-now
+  plantNow.className =
+    plant_now[
+      ($.inArray(plantNow.className, plant_now) + 1) % plant_now.length
+    ];
+
   // Disable Button Till After Transition
   plant.disabled = true;
   setTimeout(function () {
