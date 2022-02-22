@@ -1,29 +1,43 @@
-body {
+.main-body {
   background: url("./images/bg-1.png") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
- 
+
+  background-color:transparent;
+  transition:background-image  2s ease;
 }
 
-body::-webkit-scrollbar {
+
+
+.main-body::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.main-body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 a {
   text-decoration: none;
 }
 .container {
   margin: 0 auto;
-   overflow-y: hidden;
+  overflow-y: hidden;
   /* background-color: darkblue; */
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+   background: url("./images/logo.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 80%;
+   height: 40px;
+  transition:background-image  2s ease;
 }
 
 .navigation-desktop {
@@ -33,9 +47,12 @@ a {
 .mobile {
   display: flex;
   justify-content: space-around;
-   overflow: hidden;
-   padding-top: 0.5em;
+  overflow: hidden;
+  /* padding-top: 0.5em; */
+  /* background-color: powderblue; */
 }
+
+
 
 .mobile-options {
   display: flex;
@@ -65,6 +82,9 @@ a {
 }
 
 .hamburger-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   z-index: 10;
@@ -79,7 +99,6 @@ a {
   filter: drop-shadow(0 0 0.75rem #ffffff);
   transform: scale(1.05) rotate(-1deg);
 }
-
 
 .main-catch {
   height: 20vh;
@@ -138,7 +157,7 @@ a {
 
 .sub-catch {
   text-align: center;
-  margin-top: -1em;
+  margin-top: -0.4em;
   margin-bottom: 2em;
   letter-spacing: 0;
   font-size: 15px;
@@ -206,6 +225,42 @@ i {
   font-size: larger;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.social-button {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 3px;
+  width: 30px;
+  height: max-content;
+  padding: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+}
+.social-button:hover > i {
+  color: rgb(255, 255, 255);
+}
+
+.social-button > i {
+  color: #a5aaa6;
+  background-color: transparent;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 26px;
+}
+
 /*  */
 /* Animated Circles CSS */
 
@@ -213,6 +268,7 @@ i {
   position: absolute;
   top: 0;
   bottom: 0;
+  margin-top: 0;
   width: 90.5%;
   height: 100vh;
   z-index: -1;
@@ -354,6 +410,75 @@ i {
   border-radius: 50%;
   background: #27702e3b;
 }
+
+
+/* Purple Palette */
+.purple-me {
+  background-color: #de1dc4;
+  transition: background-color 1s ease;
+}
+
+.purple-me-back{
+  background-color: #9e235cbd;
+}
+
+.purple-me-image{
+  background: url("./images/bg-2.png") no-repeat center center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-color:transparent;
+  transition: background-image 2s ease;
+  
+}
+
+.purple-me-logo{
+ display: flex;
+  align-items: center;
+   background: url("./images/logo-purple.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 80%;
+   height: 40px;
+    transition:background-image  2s ease;
+}
+
+
+/* Yellow Palette */
+.yellow-me {
+  background-color: #dec11d;
+  transition: background-color 1s ease;
+}
+
+.yellow-me-back{
+  background-color: #9c9e23bd;
+}
+
+.yellow-me-image{
+  background: url("./images/bg-3.png") no-repeat center center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-color:transparent;
+  transition: background-image 2s ease;
+  
+}
+
+.yellow-me-logo{
+ display: flex;
+  align-items: center;
+   background: url("./images/logo-yellow.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 80%;
+   height: 40px;
+    transition:background-image  2s ease;
+}
+
+
+
+
+
 
 @keyframes animate {
   0% {

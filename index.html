@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GrowTree</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/df3ec59988.js"
       crossorigin="anonymous"
@@ -20,7 +21,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="main-body">
     <div class="mobile-options">
       <a href="#" class="main">Main</a>
       <a href="#" class="info">Info</a>
@@ -28,12 +29,12 @@
     </div>
     <div class="container">
       <nav class="navigation-desktop">
-        <div class="logo"><img src="./images/logo.png" alt="" /></div>
+        <div class="logo"></div>
         <div class="options">
           <a href="#" class="main">Main</a>
           <a href="#" class="info">Info</a>
           <a href="#" class="contact">Contact</a>
-          <button type="button" class="plant-now">Plant Now</button>
+          <button type="button" class="plant-now ">Plant Now</button>
           <button type="button" class="hamburger">
             <img src="./images/menu icon.png" alt="" width="70%" />
           </button>
@@ -41,7 +42,7 @@
       </nav>
       <nav class="mobile">
         <div class="logo">
-          <img src="./images/logo.png" alt="" width="70%" />
+        
         </div>
         <button type="button" class="hamburger-mobile">
           <img src="./images/menu icon.png" alt="" width="70%" />
@@ -72,7 +73,7 @@
       <section class="videoplayer">
         <div class="video-container">
           <!-- Button -->
-          <button type="button" class="play-button">
+          <button type="button" class="play-button ">
             <i class="fa-solid fa-play"></i>
           </button>
           <!-- End Button -->
@@ -94,6 +95,15 @@
         <li></li>
         <li></li>
       </ul>
+
+      <section class="socialmedia">
+        <div class="socials">
+          <button type="button" class="social-button facebook"><i class="fa-brands fa-facebook-square"></i></button>
+          <button type="button" class="social-button instagram"><i class="fa-brands fa-instagram-square"></i></button>
+          <button type="button" class="social-button youtube"><i class="fa-brands fa-youtube-square
+"></i></button>
+        </div>
+      </section>
     </div>
   </body>
   <script src="app.js"></script>
