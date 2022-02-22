@@ -1,9 +1,9 @@
 .main-body {
-  background: url("./images/bg-1.png") no-repeat center center;
+  background: url("./images/bg-1.jpg") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: 100% cover;
   background-color: transparent;
   transition: background-image 2s ease;
 }
@@ -280,7 +280,7 @@ i {
   height: 20px;
   background: #94de1d8c;
   animation: animate 25s linear infinite;
-  bottom: calc(-150px - 2vh);
+  bottom: calc(-150px);
 }
 
 .circles li:nth-child(1) {
@@ -418,11 +418,11 @@ i {
 }
 
 .purple-me-image {
-  background: url("./images/bg-2.png") no-repeat center center;
+  background: url("./images/bg-2.jpg") no-repeat center center;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: 100% cover;
   background-color: transparent;
   transition: all 2s ease;
 }
@@ -449,8 +449,8 @@ i {
 }
 
 .yellow-me-image {
-  background: url("./images/bg-3.png") no-repeat center center;
-  background-size: cover;
+  background: url("./images/bg-3.jpg") no-repeat center center;
+  background-size: 100% cover;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
