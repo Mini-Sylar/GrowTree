@@ -29,7 +29,7 @@ a {
 .logo,.logo-desktop {
   display: flex;
   align-items: center;
-  background: url("./images/logo.png");
+  background: url("./images/logo.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
@@ -534,7 +534,7 @@ i {
 .purple-me-logo {
   display: flex;
   align-items: center;
-  background: url("./images/logo-purple.png");
+  background: url("./images/logo-purple.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
@@ -572,7 +572,7 @@ i {
 .yellow-me-logo {
   display: flex;
   align-items: center;
-  background: url("./images/logo-yellow.png");
+  background: url("./images/logo-yellow.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
