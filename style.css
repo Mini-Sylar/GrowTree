@@ -6,6 +6,7 @@
   background-size: 100% cover;
   background-color: #042b30;
   transition: background-image 2s ease;
+  animation: fadein 0.5s ease-in;
 }
 
 .main-body::-webkit-scrollbar {
@@ -165,6 +166,20 @@ a {
   border-radius: 20px;
   border-top-right-radius: 0;
   transition: all 0.2s ease;
+  position: relative;
+   overflow: hidden;
+}
+
+.plant-button::before{
+   position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 5s ease-in-out infinite;
 }
 
 .plant-button:hover {
@@ -660,5 +675,33 @@ i {
     transform: translateY(-120vh) rotate(720deg);
     opacity: 0;
     backdrop-filter: blur(20px);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
   }
 }
