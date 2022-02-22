@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   background-size: 100% cover;
+  background-color: #042b30;
   transition: background-image 2s ease;
 }
 
@@ -26,7 +27,8 @@ a {
   /* background-color: darkblue; */
 }
 
-.logo,.logo-desktop {
+.logo,
+.logo-desktop {
   display: flex;
   align-items: center;
   background: url("./images/logo.png") no-repeat center center;
@@ -527,7 +529,7 @@ i {
   height: 100vh;
   width: 100vw;
   background-size: 100% cover;
-  background-color: transparent;
+  background-color: #042b30;
   transition: background-image 2s ease;
 }
 
@@ -566,6 +568,7 @@ i {
   height: 100vh;
   width: 100vw;
   background-color: transparent;
+   background-color: #042b30;
   transition: background-image 2s ease;
 }
 
@@ -578,6 +581,26 @@ i {
   width: 80%;
   height: 40px;
   transition: background-image 2s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo,.logo-desktop {
+    background: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .purple-me-logo {
+    background: url("./images/logo-purple.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .yellow-me-logo {
+    background: url("./images/logo-yellow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 @keyframes animate {
