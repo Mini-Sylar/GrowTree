@@ -111,14 +111,11 @@ a {
   overflow: hidden;
 }
 
-.catch {
-  z-index: -9;
-}
-
 .catch > * {
   filter: drop-shadow(0 0 0.75rem rgb(70, 70, 70));
   height: 100%;
   letter-spacing: 0;
+  cursor: default;
 }
 
 .catch > :nth-child(1) {
@@ -167,6 +164,7 @@ a {
   border: 1px solid transparent;
   border-radius: 20px;
   border-top-right-radius: 0;
+  transition: all 0.2s ease;
 }
 
 .plant-button:hover {
@@ -175,6 +173,7 @@ a {
   filter: drop-shadow(0 0 0.75rem #94de94);
   transform: scale(1.05) rotate(-1deg);
   backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
 }
 
 .video-container {
@@ -208,6 +207,7 @@ a {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-150%, -50%);
   z-index: 3;
+  cursor: pointer;
   transition: background-color 1s ease;
 }
 
@@ -221,6 +221,10 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.play-button:hover {
+  filter: drop-shadow(0 0 0.75rem #94de1d);
 }
 
 i {
@@ -480,6 +484,16 @@ i {
     border-radius: 20px;
     border-top-right-radius: 0;
     cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .plant-now:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    filter: drop-shadow(0 0 0.75rem #94de1d);
+    transform: scale(1.05);
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
   }
 
   .main-catch {
@@ -568,7 +582,7 @@ i {
   height: 100vh;
   width: 100vw;
   background-color: transparent;
-   background-color: #042b30;
+  background-color: #042b30;
   transition: background-image 2s ease;
 }
 
@@ -584,7 +598,8 @@ i {
 }
 
 @media only screen and (min-width: 768px) {
-  .logo,.logo-desktop {
+  .logo,
+  .logo-desktop {
     background: url("./images/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -600,6 +615,33 @@ i {
     background: url("./images/logo-yellow.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .main-body {
+    background-size: 100% 110%;
+  }
+
+  .purple-me-image {
+    background-size: 100% 110%;
+  }
+
+  .yellow-me-image {
+    background-size: 100% 110%;
+  }
+
+  .logo,
+  .logo-desktop {
+    background-position-x: 200px;
+  }
+
+  .purple-me-logo {
+    background-position-x: 200px;
+  }
+
+  .yellow-me-logo {
+    background-position-x: 200px;
   }
 }
 
