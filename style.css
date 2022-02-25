@@ -90,13 +90,14 @@ a {
   background-color: transparent;
   border: none;
   z-index: 10;
-  
+  position: relative;
+  left: 28px;
+  background-color: #042b30;
 }
 
 .hamburger-mobile>* {
   position: relative;
-top: 1px;
-  left:28px;
+  top: 1px;
   filter: brightness(200%);
 }
 
