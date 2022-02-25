@@ -23,5 +23,14 @@ http://grow-tree.vercel.app/
 </div> 
 <br>
 
+<hr>
+<br>
+
 ## Attribution
 [Miro](https://dribbble.com/DrawingArt) - Design And Concept
+
+<br>
+<hr>
+
+## Contact Me
+[Terence 😊](terenceugoq@gmail.com)
