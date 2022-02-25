@@ -15,13 +15,16 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .main-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 a {
   text-decoration: none;
 }
+
 .container {
   margin: 0 auto;
   overflow-y: hidden;
@@ -87,7 +90,8 @@ a {
   border: none;
   z-index: 10;
 }
-.hamburger-mobile > * {
+
+.hamburger-mobile>* {
   filter: brightness(200%);
 }
 
@@ -112,31 +116,31 @@ a {
   overflow: hidden;
 }
 
-.catch > * {
+.catch>* {
   filter: drop-shadow(0 0 0.75rem rgb(70, 70, 70));
   height: 100%;
   letter-spacing: 0;
   cursor: default;
 }
 
-.catch > :nth-child(1) {
+.catch> :nth-child(1) {
   position: relative;
   left: 2rem;
 }
 
-.catch > :nth-child(2) {
+.catch> :nth-child(2) {
   position: relative;
   left: 0.5rem;
   z-index: -1;
 }
 
-.catch > :nth-child(3) {
+.catch> :nth-child(3) {
   position: relative;
   right: 1rem;
   z-index: -2;
 }
 
-.catch > :nth-child(4) {
+.catch> :nth-child(4) {
   position: relative;
   right: 2.5rem;
   z-index: -3;
@@ -167,19 +171,19 @@ a {
   border-top-right-radius: 0;
   transition: all 0.2s ease;
   position: relative;
-   overflow: hidden;
+  overflow: hidden;
 }
 
-.plant-button::before{
-   position: absolute;
-    content: '';
-    display: inline-block;
-    top: -180px;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background-color: #fff;
-    animation: shiny-btn1 5s ease-in-out infinite;
+.plant-button::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 5s ease-in-out infinite;
 }
 
 .plant-button:hover {
@@ -270,11 +274,12 @@ i {
 .social-button:hover {
   transform: scale(1.1);
 }
-.social-button:hover > i {
+
+.social-button:hover>i {
   color: rgb(255, 255, 255);
 }
 
-.social-button > i {
+.social-button>i {
   color: #a5aaa6;
   background-color: transparent;
   text-align: center;
@@ -293,7 +298,7 @@ i {
   width: 90.5%;
   height: 100vh;
   z-index: -1;
-  padding-top: 1em;
+  padding-top: 4.5em;
   overflow: hidden;
 }
 
@@ -442,6 +447,7 @@ i {
     padding-top: 1em;
     /* background-color: darkblue; */
   }
+
   .options {
     display: flex;
     width: 100%;
@@ -449,13 +455,14 @@ i {
     align-items: center;
     gap: 3em;
   }
-  .options > a {
+
+  .options>a {
     color: #ecf5e1;
     text-align: center;
     position: relative;
   }
 
-  .options > a::after {
+  .options>a::after {
     content: "";
     position: absolute;
     height: 5px;
@@ -468,7 +475,7 @@ i {
     transition: opacity 0.5s ease;
   }
 
-  .options > a::before {
+  .options>a::before {
     content: "";
     position: absolute;
     height: 5px;
@@ -481,12 +488,12 @@ i {
     transition: opacity 0.5s ease;
   }
 
-  .options > a:hover::before {
+  .options>a:hover::before {
     opacity: 1;
     transition: opacity 0.5s ease;
   }
 
-  .options > a:hover::after {
+  .options>a:hover::after {
     opacity: 1;
     transition: opacity 0.5s ease;
   }
@@ -520,7 +527,8 @@ i {
     border: none;
     z-index: 10;
   }
-  .hamburger > * {
+
+  .hamburger>* {
     filter: brightness(200%);
   }
 
@@ -586,6 +594,7 @@ i {
 .yellow-me-back {
   background-color: #9c9e23bd;
 }
+
 .yellow-me-plant-now {
   border-color: #dec11d;
 }
@@ -613,6 +622,7 @@ i {
 }
 
 @media only screen and (min-width: 768px) {
+
   .logo,
   .logo-desktop {
     background: url("./images/logo.png");
@@ -660,17 +670,30 @@ i {
   }
 }
 
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: monospace;
+  font-size: xx-small;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0;
     backdrop-filter: blur(2px);
   }
+
   50% {
     transform: translateY(-60vh) rotate(360deg);
     opacity: 1;
     backdrop-filter: blur(20px);
   }
+
   100% {
     transform: translateY(-120vh) rotate(720deg);
     opacity: 0;
@@ -682,6 +705,7 @@ i {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -692,14 +716,17 @@ i {
     -webkit-transform: scale(0) rotate(45deg);
     opacity: 0;
   }
+
   80% {
     -webkit-transform: scale(0) rotate(45deg);
     opacity: 0.5;
   }
+
   81% {
     -webkit-transform: scale(4) rotate(45deg);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(50) rotate(45deg);
     opacity: 0;
