@@ -38,7 +38,7 @@ a {
   background: url("./images/logo.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80%;
+  width: 50%;
   height: 40px;
   transition: background-image 2s ease;
 }
@@ -51,6 +51,7 @@ a {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
+  padding-top: 1em;
   /* padding-top: 0.5em; */
   /* background-color: powderblue; */
 }
@@ -89,9 +90,13 @@ a {
   background-color: transparent;
   border: none;
   z-index: 10;
+  
 }
 
 .hamburger-mobile>* {
+  position: relative;
+top: 1px;
+  left:28px;
   filter: brightness(200%);
 }
 
@@ -576,7 +581,7 @@ i {
   background: url("./images/logo-purple.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80%;
+  width: 50%;
   height: 40px;
   transition: background-image 2s ease;
 }
@@ -616,7 +621,7 @@ i {
   background: url("./images/logo-yellow.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80%;
+  width: 50%;
   height: 40px;
   transition: background-image 2s ease;
 }
