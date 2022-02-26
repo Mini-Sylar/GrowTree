@@ -34,4 +34,5 @@ http://grow-tree.vercel.app/
 <hr>
 
 ## Contact Me
-[Terence 😊](terenceugoq@gmail.com)
+<a href="mailto:terenceugoq@gmail.com">
+Terence😊</a>
