@@ -1,7 +1,6 @@
 # GrowTree
 ## Check it out here
 http://grow-tree.vercel.app/
-<hr>
 <br>
 
 # Screenhots
